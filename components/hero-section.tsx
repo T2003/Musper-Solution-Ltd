@@ -1,6 +1,7 @@
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface HeroSectionProps {
   title: string;
@@ -9,6 +10,7 @@ interface HeroSectionProps {
   primaryButtonLink?: string;
   secondaryButtonText?: string;
   secondaryButtonLink?: string;
+  illustration?: string;
 }
 
 export default function HeroSection({
@@ -18,10 +20,21 @@ export default function HeroSection({
   primaryButtonLink = '/services',
   secondaryButtonText = 'Schedule a Consultation',
   secondaryButtonLink = '/contact',
+  illustration,
 }: HeroSectionProps) {
   return (
     <section className='relative bg-gradient-to-br from-[#134B42] via-[#134B42]/90 to-[#134B42]/80 py-20 overflow-hidden'>
       <div className='absolute inset-0 opacity-10'>
+        {illustration && (
+          <div className='absolute inset-0'>
+            <Image
+              src={illustration}
+              alt='Hero Illustration'
+              fill
+              className='object-contain'
+            />
+          </div>
+        )}
         <div className='absolute -right-20 -top-20 w-96 h-96 rounded-full bg-[#EEA83B]'></div>
         <div className='absolute -left-20 top-40 w-80 h-80 rounded-full bg-[#CA763B]'></div>
         <div className='absolute right-40 bottom-0 w-64 h-64 rounded-full bg-[#AEBA8A]'></div>

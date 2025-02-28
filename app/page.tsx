@@ -9,6 +9,7 @@ import {
   Leaf,
   Telescope,
 } from 'lucide-react';
+import Image from 'next/image';
 
 import { Button } from '@/components/ui/button';
 import HeroSection from '@/components/hero-section';
@@ -35,7 +36,7 @@ export default function Home() {
           />
 
           <div className='grid md:grid-cols-2 gap-12 items-center'>
-            <div>
+            <div className='space-y-6'>
               <p className='text-gray-700 mb-6 leading-relaxed'>
                 Operating across diverse industries, we focus on diagnosing
                 operational inefficiencies, implementing cutting-edge
@@ -87,7 +88,15 @@ export default function Home() {
       </section>
 
       {/* Core Values Section */}
-      <section className='py-20 bg-[#80917D]/10'>
+      <section className='py-20 bg-[#80917D]/10 relative'>
+        <div className='absolute right-0 top-0 w-64 h-64 opacity-10'>
+          <Image
+            src='/green/Brainstorming-rafiki.svg'
+            alt='Brainstorming'
+            fill
+            className='object-contain'
+          />
+        </div>
         <div className='container mx-auto px-4'>
           <h2 className='text-3xl md:text-4xl font-bold text-[#134B42] text-center mb-16'>
             Our Core Values
@@ -182,6 +191,8 @@ export default function Home() {
             subtitle='Musper Solutions Ltd. offers a comprehensive suite of services designed to address various business needs and challenges.'
           />
 
+          <div className='grid md:grid-cols-2 gap-12 items-center mb-12'></div>
+
           <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
             <ServiceCard
               icon={<Lightbulb className='h-6 w-6 text-[#134B42]' />}
@@ -249,7 +260,15 @@ export default function Home() {
       </section>
 
       {/* Industries Section */}
-      <section className='py-20 bg-[#EEA83B]/10'>
+      <section className='py-20 bg-[#EEA83B]/10 relative'>
+        <div className='absolute left-0 bottom-0 w-48 h-48 opacity-10'>
+          <Image
+            src='/green/Construction worker-rafiki.svg'
+            alt='Industries'
+            fill
+            className='object-contain'
+          />
+        </div>
         <div className='container mx-auto px-4'>
           <SectionHeader
             title='Industries We Serve'
@@ -350,10 +369,11 @@ export default function Home() {
 
       {/* CTA Section */}
       <CTASection
-        title='Ready to Transform Your Business?'
-        subtitle='Join leading companies who trust Musper Solutions to drive their success and stay ahead in the rapidly evolving business landscape.'
-        buttonText='Get Started Today'
+        title='Ready to Elevate Your Business?'
+        subtitle='Our team of experts is ready to help you overcome challenges and achieve your business goals.'
+        buttonText='Schedule a Consultation'
         buttonLink='/contact'
+        illustration='/green/In progress-rafiki.svg'
       />
     </div>
   );
