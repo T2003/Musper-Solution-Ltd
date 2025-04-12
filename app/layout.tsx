@@ -9,14 +9,14 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://musper.com'),
-  title: 'Musper Solutions Ltd - Empowering Businesses with Smart Solutions',
+  title: 'Musper Solutions - Empowering Businesses with Smart Solutions',
   description:
     'A premier consultancy firm specializing in empowering businesses with innovative and sustainable solutions.',
   keywords:
     'business consultancy, digital transformation, business diagnostics, strategic planning, business advisory, Rwanda, Kigali',
-  authors: [{ name: 'Musper Solutions Ltd' }],
-  creator: 'Musper Solutions Ltd',
-  publisher: 'Musper Solutions Ltd',
+  authors: [{ name: 'Musper Solutions' }],
+  creator: 'Musper Solutions',
+  publisher: 'Musper Solutions',
   generator: 'Next.js',
   applicationName: 'Musper Solutions Website',
   referrer: 'origin-when-cross-origin',
@@ -26,20 +26,20 @@ export const metadata: Metadata = {
     telephone: false,
   },
   icons: {
-    icon: '/Logo.jpg',
-    apple: '/Logo.jpg',
+    icon: '/Logo.png',
+    apple: '/Logo.png',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://muspersolutions.com',
-    title: 'Musper Solutions Ltd - Empowering Businesses with Smart Solutions',
+    url: 'https://musper.com',
+    title: 'Musper Solutions - Empowering Businesses with Smart Solutions',
     description:
       'A premier consultancy firm specializing in empowering businesses with innovative and sustainable solutions.',
-    siteName: 'Musper Solutions Ltd',
+    siteName: 'Musper Solutions',
     images: [
       {
-        url: '/Logo.jpg',
+        url: '/Logo.png',
         width: 800,
         height: 600,
         alt: 'Musper Solutions Logo',
@@ -48,10 +48,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Musper Solutions Ltd - Empowering Businesses with Smart Solutions',
+    title: 'Musper Solutions - Empowering Businesses with Smart Solutions',
     description:
       'A premier consultancy firm specializing in empowering businesses with innovative and sustainable solutions.',
-    images: ['/Logo.jpg'],
+    images: ['/Logo.png'],
     creator: '@muspersolutions',
   },
   robots: {
@@ -82,7 +82,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <head>
-        <link rel='icon' href='/Logo.jpg' />
+        <link rel='icon' href='/Logo.png' />
       </head>
       <body className={inter.className}>
         <Navbar />

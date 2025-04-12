@@ -21,7 +21,7 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4">
           <SectionHeader
             title="Comprehensive Business Solutions"
-            subtitle="Musper Solutions Ltd. offers a comprehensive suite of services designed to address various business needs and challenges."
+            subtitle="We offer a range of services designed to meet the evolving needs of businesses, including:"
           />
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

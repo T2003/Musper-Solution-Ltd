@@ -19,7 +19,7 @@ export default function HeroSection({
   primaryButtonText = 'Explore Our Services',
   primaryButtonLink = '/services',
   secondaryButtonText = 'Schedule a Consultation',
-  secondaryButtonLink = '/contact',
+  secondaryButtonLink = 'https://shorturl.at/JudZ0',
   illustration,
 }: HeroSectionProps) {
   return (
@@ -41,7 +41,7 @@ export default function HeroSection({
       </div>
       <div className='container mx-auto px-4 relative z-10'>
         <div className='max-w-3xl mx-auto text-center'>
-          <h1 className='text-4xl md:text-6xl font-bold text-white mb-6'>
+          <h1 className='text-4xl md:text-4xl font-bold text-white mb-6'>
             {title}
           </h1>
           <p className='text-lg md:text-xl text-white/90 mb-8'>{subtitle}</p>
@@ -60,7 +60,7 @@ export default function HeroSection({
               variant='outline'
               className='bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#134B42] font-medium text-lg px-6 py-3 rounded-md shadow-lg hover:shadow-xl transition-all duration-300'
             >
-              <Link href={secondaryButtonLink}>{secondaryButtonText}</Link>
+              <a href={secondaryButtonLink} target='_blank'>{secondaryButtonText}</a>
             </Button>
           </div>
         </div>

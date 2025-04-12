@@ -38,12 +38,10 @@ export default function Home() {
           <div className='grid md:grid-cols-2 gap-12 items-center'>
             <div className='space-y-6'>
               <p className='text-gray-700 mb-6 leading-relaxed'>
-                Operating across diverse industries, we focus on diagnosing
-                operational inefficiencies, implementing cutting-edge
-                technologies, and crafting strategic plans tailored to each
-                client's unique needs. With over 15 years of combined experience
-                in consultancy and private-sector operations, we bring unmatched
-                expertise and a client-first approach to every project.
+              Musper is a dynamic company dedicated to providing innovative business development solutions, 
+              ICT services, and women empowerment programs. With a deep understanding of Rwanda’s 
+              private sector landscape, we specialize in offering tailored support to businesses, 
+              helping them scale, optimize operations, and access new opportunities.
               </p>
               <p className='text-gray-700 leading-relaxed'>
                 We believe in building lasting relationships with our clients,
@@ -89,14 +87,6 @@ export default function Home() {
 
       {/* Core Values Section */}
       <section className='py-20 bg-[#80917D]/10 relative'>
-        <div className='absolute right-0 top-0 w-64 h-64 opacity-10'>
-          <Image
-            src='/green/Brainstorming-rafiki.svg'
-            alt='Brainstorming'
-            fill
-            className='object-contain'
-          />
-        </div>
         <div className='container mx-auto px-4'>
           <h2 className='text-3xl md:text-4xl font-bold text-[#134B42] text-center mb-16'>
             Our Core Values
@@ -188,9 +178,8 @@ export default function Home() {
         <div className='container mx-auto px-4'>
           <SectionHeader
             title='Our Services'
-            subtitle='Musper Solutions Ltd. offers a comprehensive suite of services designed to address various business needs and challenges.'
+            subtitle='We offer a range of services designed to meet the evolving needs of businesses, including:'
           />
-
           <div className='grid md:grid-cols-2 gap-12 items-center mb-12'></div>
 
           <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
@@ -261,14 +250,6 @@ export default function Home() {
 
       {/* Industries Section */}
       <section className='py-20 bg-[#EEA83B]/10 relative'>
-        <div className='absolute left-0 bottom-0 w-48 h-48 opacity-10'>
-          <Image
-            src='/green/Construction worker-rafiki.svg'
-            alt='Industries'
-            fill
-            className='object-contain'
-          />
-        </div>
         <div className='container mx-auto px-4'>
           <SectionHeader
             title='Industries We Serve'
@@ -373,7 +354,6 @@ export default function Home() {
         subtitle='Our team of experts is ready to help you overcome challenges and achieve your business goals.'
         buttonText='Schedule a Consultation'
         buttonLink='/contact'
-        illustration='/green/In progress-rafiki.svg'
       />
     </div>
   );
